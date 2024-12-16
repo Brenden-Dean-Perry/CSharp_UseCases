@@ -37,19 +37,19 @@ namespace UseCases.Classes
         public string GetOpenAIEmbeddingEndpoint()
         {
             string Name = "OpenAIEmbeddingEndpoint";
-            return ConfigurationManager.AppSettings[Name];
+            return ConfigurationManager.AppSettings[Name] ?? string.Empty;
         }
 
         public string GetOpenAIGenerativeTextEndpoint()
         {
             string Name = "OpenAITextGenerationEndpoint";
-            return ConfigurationManager.AppSettings[Name];
+            return ConfigurationManager.AppSettings[Name] ?? string.Empty;
         }
 
         public string GetApiKeyDictonaryPath()
         {
             string Name = "APIKeyDictionaryFilePath";
-            return ConfigurationManager.AppSettings[Name];
+            return ConfigurationManager.AppSettings[Name] ?? string.Empty;
         }
 
 

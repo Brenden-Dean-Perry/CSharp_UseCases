@@ -8,7 +8,6 @@ using DataAccessInterface;
 using System.Configuration;
 using DataAccessInterface.Gateways;
 
-
 namespace UseCases.Classes
 {
     
